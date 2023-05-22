@@ -40,7 +40,7 @@ impl Plugin for RaycastBackend {
 
 /// This unit struct is used to tag the generic ray casting types
 /// [`RaycastMesh`](bevy_mod_raycast::RaycastMesh) and [`RaycastSource`].
-#[derive(Reflect, Clone)]
+#[derive(Reflect, Clone, Component)]
 pub struct RaycastPickingSet;
 
 /// Marks an entity that should be pickable with [`bevy_mod_raycast`] ray casts.
